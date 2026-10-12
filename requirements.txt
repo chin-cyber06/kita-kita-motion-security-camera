@@ -1,0 +1,6 @@
+# Smart Room Monitor - dependencies
+#
+# OpenCV 4.x is REQUIRED. OpenCV 5.x no longer includes the Haar cascade
+# face detector in the main package, so the version is capped below 5.
+opencv-python>=4.5,<5
+numpy>=1.21
