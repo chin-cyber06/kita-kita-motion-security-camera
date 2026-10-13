@@ -128,6 +128,28 @@ All adjustable values are in the **SETTINGS** block at the top of `smart_room_mo
 | `FACE_MIN_SIZE` | `(60, 60)` | Ignores faces smaller than this |
 | `FACE_EVERY_N_FRAMES` | `3` | Runs face detection every Nth frame to save time |
 
+## Sample output
+**Figure 1.** Original frame vs. preprocessed versions (grayscale, blurred, equalized).
+![Figure 1](screenshots/01_fig1_preprocessing.png)
+
+**Figure 2.** Motion mask after MOG2, thresholding and morphological cleaning (white = moving pixels).
+![Figure 2](screenshots/02_fig2_motion_mask.png)
+
+**Figure 3.** Final output with bounding boxes, IDs, trails and ALERT panel (moving objects).
+![Figure 3](screenshots/03_fig3_final_output_moving_objects.png)
+
+**Figure 4.** Face detection results with the face count displayed in the panel (no motion).
+![Figure 4](screenshots/04_fig4_face_detection.png)
+
+**Figure 5.** Evidence snapshot saved automatically in `alerts/` at the moment the alert was raised.
+![Figure 5](screenshots/05_alert_snapshot_evidence.png)
+
+**Figure 6.** Status remains “Clear” when no motion is detected.
+![Figure 6](screenshots/06_status_clear_after_leaving.png)
+
+The FPS shown in the screenshots is the speed of the computer used to make
+them; your own value will differ.
+
 ## Limitations
 
 * **Sudden lighting changes** (a light switched on) can briefly look like
