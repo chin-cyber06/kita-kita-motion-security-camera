@@ -1,8 +1,6 @@
-# Smart Room Monitor
+# KITA KITA: A Motion-Triggered Security Camera with Face Detection
 
-Motion-triggered security with face detection, running on a live webcam.
-
-Smart Room Monitor is a Python + OpenCV application that watches a room through your webcam. When something moves, it tracks the object, checks for faces, raises an on-screen alert, and saves a time-stamped snapshot as evidence.
+KITA KITA is a Python + OpenCV application that watches a room through your webcam. When something moves, it tracks the object, checks for faces, raises an on-screen alert, and saves a time-stamped snapshot as evidence.
 
 ## Features
 
@@ -162,6 +160,7 @@ smart-room-monitor/
 ├── smart_room_monitor.py   # the application
 ├── README.md               # this file
 ├── requirements.txt        # dependencies
+├── venv/                   # optional (but Recommended)
 ├── alerts/                 # created at runtime: evidence snapshots
 └── figures/                # created at runtime: report figures
 ```
